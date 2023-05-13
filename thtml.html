@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<link rel="stylesheet" href="C:/web/week1/htmltest/index.css"></link>
+
+<head>
+    <title>나의 웹사이트</title>
+</head>
+<body id="container">
+    <div>    <!-- div태그 == 구역(줄)나눔 -->    <!-- flex == css적인부분 -->
+            <h1>H1</h1>
+            <p>     <!-- p태그 == 문단작성 -->
+                <strong>    <!-- strong태그 == 내용강조(진하게) -->
+                안녕하세요.
+                </strong>
+                <br/>    <!--br태그 == 줄바꿈  -->
+                반갑습니다. 
+            </p>
+            <input type="text" style="width: 495px; height: 70px; font-size: 50px; margin: 6px;">
+            <div>
+                <form action="./2" method="get">
+                    <button style="width: 250px; height: 100px; font-size: 50px; ">2페이지</button>
+                </form>
+            </div>
+            <a href="https://www.youtube.com" style=" font-size: 30px;">유튜브로 이동</a> <!-- a태그 == 웹사이트 링크 걸어줌 -->
+    </div>
+    <div>
+        <h1>두 번째 블록</h1>
+        <img src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500" alt="youtube">
+        <!-- ul태그 & ol태그 == 리스팅에 이용 -->
+        <!-- ol태그는 앞에 자동으로 숫자 넘버링이 붙음 -->
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <ol>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ol>
+        <!-- table태그 == 표를 만들 때 이용 -->
+        <!-- tr태그 == 테이블의 한 행 -->
+        <!-- th태그 == 테이블 헤더(첫 행에 사용) -->
+        <!-- td태그 == 테이블의 내용 -->
+        <!-- caption태그 == 테이블의 이름 -->
+        <table summary="테이블">
+            <caption>인사정보(테이블의 이름)</caption>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>지역</th>
+            </tr>
+            <tr>
+                <td>철수</td>
+                <td>12</td>
+                <td>서울</td>
+            </tr>
+            <tr>
+                <td>영희</td>
+                <td>14</td>
+                <td>부산</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h1>세 번째 블록</h1>
+        <form>
+            <input type="text">
+            <input type="email">
+            <input type="password">
+            <input type="date" style="width: 372px;">
+            <br/>
+            <label><input type="checkbox"><strong>체크박스</strong></label>
+            <br/>
+            <label><input type="color"><strong>색깔</strong></label>
+            <br/>
+              <!-- select태그 == 항목선택시 이용 -->
+            <!-- name속성으로 이름 지정 -->
+            <!-- option태그 == value속성으로 전송 값 지정 -->
+            <select name="coffee" style="font-size: 30px;">
+                <option value="1">아메리카노</option>
+                <option value="2">카페라떼</option>
+                <option value="3">에스프레소</option>
+            </select>
+            <br/>
+            <input type="datetime">
+            <input type="datetime-local">
+            <input type="file">
+            <input type="month">
+            <input type="number">
+            <br/>
+            <!-- type속성의 radio는 여러개의 항목 중 하나만 선택 시 사용 -->
+            <!-- label태그 == 폼의 양식에 이름 붙힘 -->
+            <label><input type="radio" name="과일" value="사과">사과</label>
+            <br/>
+            <input type="range">
+            <input type="reset">
+            <input type="time">
+            <input type="week">
+            <br/>
+            <button type="submit" style="font-size: 30px;">제출</button>
+        </form>
+    </div>
+</body>
+</html>
