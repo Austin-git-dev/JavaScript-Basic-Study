@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-<link rel="stylesheet" href="C:/web/week1/htmltest/index.css"></link>
+<link rel="stylesheet" href="C:/web/week1/htmltest/css/thtml2.css"></link>
 
 <head>
     <meta charset="UTF-8">
@@ -8,18 +8,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2페이지</title>
 </head>
-<body>
-    <p>
-        <strong>2페이지.</strong>
-    </p>
-    <form action="./" method="get">
-        <button type="submit" style="font-size: 30px;">1페이지</button>
-        <!-- <input type="text"> -->
-    </form>
-    <form action="./2/3" method="get">
-        <button type="submit" style="font-size: 30px;">3페이지</button>
-    </form>
-
-    
+<body id="container">
+    <div>
+        <p>
+            <h1>
+                <strong>
+                    2페이지.
+                </strong>
+            </h1>
+        </p>
+    </div>
+    <div>
+        <form action="./" method="get">
+            <button type="submit" style="font-size: 30px;">1페이지</button>
+        </form>
+        <form action="./2/3" method="get">
+            <button type="submit" style="font-size: 30px;">3페이지</button>
+        </form>
+        <br/>
+    </div>
+    <div id="login">
+        <h2 class="bluefont">
+            <strong>
+                Login
+            </strong>
+        </h2>
+        <form action="./2/3" method="get">
+            <!-- placeholder속성 == 입력 필드에 사용자가 어떤 값을 입력해야 하는지를 간략하게 알려주는 역할 -->
+            <input type="text" name="userName" placeholder="ID" style="font-size: 30px;">
+            <br/>
+            <input type="password" name="userPassword" placeholder="Password" style="font-size: 30px;">
+            <br/>
+            <label  class="remember-check">
+                <input type="checkbox">
+                아이디 저장하기
+            </label>
+            <br/>
+            <button type="submit" style="font-size: 30px;">
+                로그인
+            </button>
+        </form>
+    </div>
 </body>
 </html>

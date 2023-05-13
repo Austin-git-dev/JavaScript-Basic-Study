@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* #(id속성) == 전체 페이지에서 한 태그에만 사용 */
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#login button {
+    width: 372px;
+    color: aliceblue;
+    background-color: #6A24FE;
+}
+
+/* .(class속성) == 여러가지의 태그를 동시에 동일하게 바꿔주고 싶을때 사용(태그당 한 번 가능) */
+.bluefont {
+    color: #6A24FE;
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-size: 30px;
+}
+
+input {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+/* form {
+    flex-direction: column;
+} */
+
+.fontsize {
+    font-size: 30px;
+}
+
+.remember-check {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
