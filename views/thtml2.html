@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
-<link rel="stylesheet" href="C:/web/week1/htmltest/css/thtml2.css"></link>
+<link rel="stylesheet" href="/css/thtml2.css"></link>
+<!-- 로그인 구현 페이지 -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2페이지</title>
+    <title>로그인(2페이지)</title>
 </head>
 <body id="container">
     <div>
         <p>
             <h1>
                 <strong>
-                    2페이지.
+                    로그인(2페이지)
                 </strong>
             </h1>
         </p>
     </div>
-    <div>
-        <form action="./" method="get">
-            <button type="submit" style="font-size: 30px;">1페이지</button>
+    <div id="movepage">
+        <form action="/" method="get">
+            <button type="submit">
+                1페이지
+            </button>
         </form>
-        <form action="./2/3" method="get">
-            <button type="submit" style="font-size: 30px;">3페이지</button>
+        <form action="/2/3" method="get">
+            <button type="submit">
+                3페이지
+            </button>
+        </form>
+        <form action="/2/loginfail" method="get">
+            <button type="submit">
+                로그인 실패
+            </button>
         </form>
         <br/>
     </div>
@@ -33,18 +43,19 @@
                 Login
             </strong>
         </h2>
-        <form action="./2/3" method="get">
+        
+        <form action="/2/3" method="post">
             <!-- placeholder속성 == 입력 필드에 사용자가 어떤 값을 입력해야 하는지를 간략하게 알려주는 역할 -->
-            <input type="text" name="userName" placeholder="ID" style="font-size: 30px;">
+            <input type="text" name="userName" placeholder="ID">
             <br/>
-            <input type="password" name="userPassword" placeholder="Password" style="font-size: 30px;">
+            <input type="password" name="userPassword" placeholder="Password">
             <br/>
             <label  class="remember-check">
                 <input type="checkbox">
                 아이디 저장하기
             </label>
             <br/>
-            <button type="submit" style="font-size: 30px;">
+            <button type="submit">
                 로그인
             </button>
         </form>

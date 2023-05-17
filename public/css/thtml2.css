@@ -15,6 +15,12 @@ body {
     height: 100vh;
 }
 
+#container body {
+    margin: 100;
+    padding: 0;
+    border: none;
+}
+
 #login{
     display: flex;
     flex-direction: column;
@@ -25,7 +31,22 @@ body {
     width: 372px;
     color: aliceblue;
     background-color: #6A24FE;
+    font-size: 30px;
 }
+
+#login input {
+    font-size: 30px;
+}
+
+#movepage {
+    display: flex;
+    flex-direction: row;
+}
+
+#movepage button {
+    font-size: 30px;
+}
+
 
 /* .(class속성) == 여러가지의 태그를 동시에 동일하게 바꿔주고 싶을때 사용(태그당 한 번 가능) */
 .bluefont {
@@ -53,6 +74,6 @@ input {
 .remember-check {
     width: 30px;
     height: 30px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }

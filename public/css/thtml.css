@@ -1,3 +1,5 @@
+/*thtml.html용 css파일 (유튜브 조코딩채널 참조) */
+
 * {
     box-sizing: border-box;
 }
@@ -13,6 +15,7 @@ body {
     height: 100vh;
 }
 
+/* .(class속성) == 여러가지의 태그를 동시에 동일하게 바꿔주고 싶을때 사용(태그당 한 번 가능) */
 P {
     font-size: 30px;
 }
